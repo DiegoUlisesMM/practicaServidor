@@ -1,0 +1,12 @@
+/* MensajeNoEncontrado.css */
+.mensaje-no-encontrado {
+    text-align: center;
+    color: #d9534f; /* Color de texto rojo */
+    font-size: 24px; /* Tamaño de fuente grande */
+    margin-top: 20px; /* Espacio superior para separarlo del contenido anterior */
+  }
+  
+  .mensaje-no-encontrado .icon {
+    font-size: 100px; /* Tamaño de fuente grande para el icono */
+  }
+  

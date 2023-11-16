@@ -1,0 +1,15 @@
+.Pedientes {
+    display: flex;
+    background-color: #dce4fe;
+    width: 18%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+p {
+    justify-content: center;
+    align-items: center;
+}
