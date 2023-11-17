@@ -3,6 +3,7 @@
 importScripts('https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js')
 importScripts('js/sw-db.js');
 importScripts('js/sw-utils.js');
+importScripts('firebase-messaging-sw.js');
 
 // Crear las variables de cache
 const CACHE_DYNAMIC = 'dynamic-v1' // Para los archivos que se van a descargar
@@ -28,6 +29,8 @@ self.addEventListener('install', event => {
         return cache.addAll([
             'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
             'https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js',
+            'https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js',
+            'https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js'
         ])
     })
     event.waitUntil(Promise.all([cachePromise, cacheInmutable]))

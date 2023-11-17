@@ -12,7 +12,7 @@ function guardarMensaje(mensaje) {
 }
 
 //Postear mensajes a la API
-function postearMensaajes() {
+function postearMensajes() {
 
     const posteos = [];
 
